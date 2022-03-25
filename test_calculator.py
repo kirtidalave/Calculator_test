@@ -12,8 +12,23 @@ class TestCalculator (unittest. TestCase):
         result=calculator.add(x, y)
         self.assertEqual (result, x+y)
 
-    def test_add(self):
+    def test_sub(self):
         x=10
         y=20
-        result=calculator.add(x, y)
-        self.assertEqual (result, x+y)
+        result=calculator.sub(x, y)
+        self.assertEqual (result, x-y)
+
+    def test_mult(self):
+        x=10
+        y=20
+        result=calculator.mult(x, y)
+        self.assertEqual (result, x*y)
+
+    def test_div(self):
+        x=10
+        y=20
+        result=calculator.div(x, y)
+        self.assertEqual (result, x/y)
+
+if __name__=="__main__":
+    unittest.main()
